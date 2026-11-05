@@ -4,7 +4,8 @@ A LUNA Add On that gives the open session a mixer styled after a late-80s casset
 portastudio: a cassette deck with turning reels and an LCD tape counter over a mixer with tape
 scribble strips, colour-coded knobs and LED meters.
 
-Requires LUNA 3.1.1 or later.
+Requires LUNA 3.1.1 or later. The EQ and the Reverb and Delay buses use LUNA's built-in LUNA
+Channel plug-in.
 
 ## Install
 
@@ -20,8 +21,8 @@ Open it from **Add Ons > Apps > StudioLo**.
 
 ### Deck
 
-- **+ Add track** adds an audio track (name it and choose Mono or Stereo), set up with the Qi
-  channel strip on its 4-Band EQ preset and sends to Reverb and Delay buses, which it creates if
+- **+ Add track** adds an audio track (name it and choose Mono or Stereo), set up with LUNA
+  Channel's four-band EQ and sends to Reverb and Delay buses, which it creates if
   the session has none.
 - Click the cassette for the session selector: open a recent session, or create one. LUNA
   keeps one session open at a time, so this closes the current one.
@@ -45,10 +46,16 @@ A strip for every visible track, then the buses, with the master last.
 - **Mute** and **Solo**; audio and instrument tracks also have **REC** (record arm) and **MON**
   (input monitor).
 - **Input** on audio tracks picks the track's input.
-- **EQ:** four knobs (12 kHz, 2.5 kHz, 400 Hz, 60 Hz) for the Qi channel strip in the channel's
-  first insert. Without Qi they sit dimmed; click one to load Qi there.
+- **EQ:** four knobs (12 kHz, 2.5 kHz, 400 Hz, 60 Hz) for LUNA Channel's EQ in the channel's
+  console slot. Without it they sit dimmed; click one to put LUNA Channel there (it replaces
+  another console plugin).
 - **Reverb** and **Delay** knobs set sends to the session's Reverb and Delay buses. Click a
   dimmed one to create the bus (if needed) and route the send.
+- The **Reverb** and **Delay** buses have a **Settings** button under their name: it opens a
+  panel to switch the effect on or off, pick its type (Plate, Hall, Cathedral, Digital, Spring;
+  or Digital, Space Tape, Ping Pong) and turn its knobs (reverb mix, size, decay, pre-delay,
+  damping, low and high cut, width, output; delay sync, time, feedback, mix). Click a value
+  under a knob to type one ("3.5", "800 ms", "1k", "1/8T"); Enter sets it, Escape cancels.
 - Click a strip to make it LUNA's focused and selected channel. The focused strip is lit, and
   follows focus changes made in LUNA.
 
