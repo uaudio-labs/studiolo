@@ -58,8 +58,12 @@ A strip for every visible track, then the buses, with the master last.
   under a knob to type one ("3.5", "800 ms", "1k", "1/8T"); Enter sets it, Escape cancels.
 - Click a strip to make it LUNA's focused and selected channel. The focused strip is lit, and
   follows focus changes made in LUNA.
+- **Drop audio files** (WAV, AIFF, FLAC, MP3, M4A, CAF) on the mixer: each becomes a new track
+  named after the file, mono or stereo as the file is, with the audio from the start of the
+  session, set up with the EQ and Reverb and Delay sends like **+ Add track**.
 
-Every drag is one undo step in LUNA.
+Every drag is one undo step in LUNA. Cmd+Z and Cmd+Shift+Z (Ctrl+Z and Ctrl+Shift+Z on
+Windows) undo and redo while StudioLo has the keyboard.
 
 ### Timeline
 
@@ -67,4 +71,8 @@ Along the bottom, the whole session for one audio track: a bar ruler, the track'
 their waveforms, and the playhead. It shows the focused audio track.
 
 - Click to move the play start, loop and edit selection there; drag to select a range.
+- Zoom with a trackpad pinch, Cmd and the scroll wheel, or Cmd+] (in) and Cmd+[ (out), as in
+  LUNA; scroll a zoomed view with the scroll wheel.
+- **Drop audio files** on the timeline to put them on its track where you drop them; a line
+  shows where while you drag. Several files go one after another.
 - Drag the grip on its top edge to resize it; double-click the grip to reset.
