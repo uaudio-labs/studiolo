@@ -54,7 +54,7 @@ A strip for every visible track, then the buses, with the master last.
 - The **Reverb** and **Delay** buses have a **Settings** button under their name: it opens a
   panel to switch the effect on or off, pick its type (Plate, Hall, Cathedral, Digital, Spring;
   or Digital, Space Tape, Ping Pong) and turn its knobs (reverb mix, size, decay, pre-delay,
-  damping, low and high cut, width, output; delay sync, time, feedback, mix). Click a value
+  damping, low and high cut, width, level; delay sync, time, feedback, mix). Click a value
   under a knob to type one ("3.5", "800 ms", "1k", "1/8T"); Enter sets it, Escape cancels.
 - Click a strip to make it LUNA's focused and selected channel. The focused strip is lit, and
   follows focus changes made in LUNA.
