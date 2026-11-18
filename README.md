@@ -81,6 +81,8 @@ audio or instrument track. While it records, the take shows in red as it grows: 
 the audio coming in, or the notes as you play them.
 
 - Click to move the play start, loop and edit selection there; drag to select a range.
+- Cmd+X, Cmd+C and Cmd+V cut, copy and paste the selected range of the track shown, Delete
+  clears it and Cmd+D duplicates it (Ctrl on Windows). Click where you want a paste to go.
 - Zoom with a trackpad pinch, Cmd and the scroll wheel, or Cmd+] (in) and Cmd+[ (out), as in
   LUNA; scroll a zoomed view with the scroll wheel.
 - **Drop audio files** on the timeline to put them on its track where you drop them; a line
