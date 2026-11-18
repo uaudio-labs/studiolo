@@ -21,14 +21,21 @@ Open it from **Add Ons > Apps > StudioLo**.
 
 ### Deck
 
-- **+ Add track** adds an audio track (name it and choose Mono or Stereo), set up with LUNA
+- **Add > Track** adds an audio track (name it and choose Mono or Stereo), set up with LUNA
   Channel's four-band EQ and sends to Reverb and Delay buses, which it creates if
   the session has none.
+- **Add > Instrument** opens a browser of instrument track presets and instrument presets,
+  with search and tags. Pick one to make an instrument track, set up with the same EQ and Reverb and Delay sends as
+  **Add > Track**; pick others to try them on that track; **Done** (or double-click a preset)
+  closes it.
 - Click the cassette for the session selector: open a recent session, or create one. LUNA
   keeps one session open at a time, so this closes the current one.
-- **Timeline** and **Mixer** switch LUNA's main window to that page.
 - **Tempo** shows the BPM at the playhead. **+** and **−** change it by 1 BPM (0.1 with
   Shift); double-click to type a value.
+- **QWERTY MIDI** is always on: the computer keyboard plays the selected instrument track (or the
+  last one played, if another kind of track is selected). A to ; are the
+  white keys, W E T Y U O P the black ones, Z and X change the octave, C and V the velocity.
+  **Octave** and **Velocity**, under the QWERTY MIDI label, show and change its settings.
 - **Click** turns the metronome on and off. **RTZ** returns to zero. **Rec**, **Play/Pause**,
   **Stop** and **Loop** work as LUNA's own transport does, and follow it.
 
@@ -46,6 +53,7 @@ A strip for every visible track, then the buses, with the master last.
 - **Mute** and **Solo**; audio and instrument tracks also have **REC** (record arm) and **MON**
   (input monitor).
 - **Input** on audio tracks picks the track's input.
+- **Instrument** on instrument tracks shows the instrument's preset; click it to pick another.
 - **EQ:** four knobs (12 kHz, 2.5 kHz, 400 Hz, 60 Hz) for LUNA Channel's EQ in the channel's
   console slot. Without it they sit dimmed; click one to put LUNA Channel there (it replaces
   another console plugin).
@@ -60,15 +68,17 @@ A strip for every visible track, then the buses, with the master last.
   follows focus changes made in LUNA.
 - **Drop audio files** (WAV, AIFF, FLAC, MP3, M4A, CAF) on the mixer: each becomes a new track
   named after the file, mono or stereo as the file is, with the audio from the start of the
-  session, set up with the EQ and Reverb and Delay sends like **+ Add track**.
+  session, set up with the EQ and Reverb and Delay sends like **Add > Track**.
 
 Every drag is one undo step in LUNA. Cmd+Z and Cmd+Shift+Z (Ctrl+Z and Ctrl+Shift+Z on
 Windows) undo and redo while StudioLo has the keyboard.
 
 ### Timeline
 
-Along the bottom, the whole session for one audio track: a bar ruler, the track's clips with
-their waveforms, and the playhead. It shows the focused audio track.
+Along the bottom, the whole session for one track: a bar ruler, the track's clips (audio clips
+with their waveforms, MIDI clips with their notes), and the playhead. It shows the selected
+audio or instrument track. While it records, the take shows in red as it grows: the waveform of
+the audio coming in, or the notes as you play them.
 
 - Click to move the play start, loop and edit selection there; drag to select a range.
 - Zoom with a trackpad pinch, Cmd and the scroll wheel, or Cmd+] (in) and Cmd+[ (out), as in
